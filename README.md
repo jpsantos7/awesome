@@ -14,37 +14,38 @@ Please read [`contributing guidelines`](./CONTRIBUTING.md) before submitting new
 
 ## Table of Content
 
-- [Hosting](#hosting)
-- [Learning Platforms](#learning-platforms)
-- [Coding Challenge Platforms](#coding-challenge-platforms)
-- [Freelancing platforms](#freelancing-platforms)
-- [Remote Jobs](#remote-jobs)
-- [Photos](#photos)
-- [Videos](#videos)
-- [Illustrations](#illustrations)
-- [Icons](#icons)
-- [Fonts](#fonts)
-- [Youtube Channels](#youtube-channels)
-- [Podcasts](#podcasts)
-- [Code Editors](#code-editors)
-- [Color Palettes](#color-palettes)
-- [UI Inspiration](#ui-inspiration)
-- [Docs](#docs)
-- [Animation Libraries](#animation-libraries)
-- [Charts](#charts)
-- [Chrome Extensions](#chrome-extensions)
-- [Website Optimization Tools](#website-optimization-tools)
-- [HTML/CSS/JavaScript templates](#htmlcssjavascript-templates)
-- [Newsletters](#newsletters)
-- [CSS Generators](#css-generators)
-- [Online Tools](#online-tools)
-- [UI Components](#ui-components)
-- [Vue UI libraries](#vue-ui-libraries)
-- [React UI libraries](#react-ui-libraries)
-- [Angular UI libraries](#angular-ui-libraries)
-- [Useful Snippets](#useful-snippets)
-- [Accessibility](#accessibility)
-- [Others](#others)
+- [Awesome Web Dev Resources ](#awesome-web-dev-resources-)
+  - [Table of Content](#table-of-content)
+  - [Hosting](#hosting)
+  - [Learning Platforms](#learning-platforms)
+  - [Coding Challenge Platforms](#coding-challenge-platforms)
+  - [Photos](#photos)
+  - [Videos](#videos)
+  - [Illustrations](#illustrations)
+  - [Icons](#icons)
+  - [Fonts](#fonts)
+  - [Youtube Channels](#youtube-channels)
+  - [Podcasts](#podcasts)
+  - [Code Editors](#code-editors)
+  - [Color Palettes](#color-palettes)
+  - [UI Inspiration](#ui-inspiration)
+  - [Docs](#docs)
+  - [Animation Libraries](#animation-libraries)
+  - [Charts](#charts)
+  - [Chrome Extensions](#chrome-extensions)
+  - [Website Optimization Tools](#website-optimization-tools)
+  - [HTML/CSS/JavaScript templates](#htmlcssjavascript-templates)
+  - [Newsletters](#newsletters)
+  - [CSS Generators](#css-generators)
+  - [Online Tools](#online-tools)
+  - [UI Components](#ui-components)
+  - [Vue UI libraries](#vue-ui-libraries)
+  - [React UI libraries](#react-ui-libraries)
+  - [Angular UI libraries](#angular-ui-libraries)
+  - [Useful Snippets](#useful-snippets)
+    - [JavaScript](#javascript)
+  - [Accessibility](#accessibility)
+  - [Others](#others)
 
 ## Hosting
 
@@ -606,6 +607,101 @@ for (let i = 0; i < allImg.length; i++) {
       });
   }
 }
+```
+
+HTML Metatags - [See gist](https://gist.github.com/jpsantos7/63c5045b3e956d33259ae6ab059c7fa3)
+```html
+<!DOCTYPE html>
+<html lang="en"><!-- Your site's language -->
+  <head>
+    <!-- Essential -->
+    <meta charset="UTF-8" /><!-- must come before any of the written content -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!-- RWD -->
+
+    <!-- Primary Meta Tags -->
+    <title>My awesome page title</title>
+    <meta name="description" content="My Awesome site's description" />
+
+    <!-- If you have other languages on the site ---
+      @see https://www.sistrix.com/ask-sistrix/onpage-optimisation/how-do-i-correctly-use-the-new-x-default-hreflang-link-attribute-for-international-targets/
+    Example:
+    <link rel="alternate" hreflang="en-gb"
+    href="https://www.my-awesome-site.com/en-gb" />
+    <link rel="alternate" hreflang="en-us"
+      href="https://www.my-awesome-site.com/en-us" />
+    <link rel="alternate" hreflang="en"
+      href="https://www.my-awesome-site.com/en" />
+    <link rel="alternate" hreflang="de"
+      href="https://www.my-awesome-site.com/de" />
+    <link rel="alternate" hreflang="x-default"
+      href="https://www.my-awesome-site.com/" /><!-- This is the fallback -->
+    -->
+    <link rel="alternate" hreflang="lang_code" href="url_of_page" />
+    <link rel="alternate" hreflang="x-default" href="https://www.my-awesome-site.com/" />
+    <!-- https://moz.com/learn/seo/canonicalization -->
+    <link rel="canonical" href="https://www.my-awesome-site.com/" />
+
+    <!-- Open Graph – @see https://ogp.me/ & https://developers.facebook.com/docs/sharing/best-practices -->
+    <meta property="og:site_name" content="Your awesome site's name (not the url nor the title)" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.my-awesome-site.com/" />
+    <meta property="og:title" content="My Awesome Page Title" />
+    <meta property="og:description" content="My awesome page description" />
+    <meta property="og:image" content="https://www.my-awesome-site.com/awesome-image.jpg" />
+    <meta property="og:image:alt" content="My awesome site's image" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <!-- If you don't change the image filename the `og:updated_time` works great for cache busting.
+      You can also add a `?v=RANDOM_NUMBER` to your image filename.
+    -->
+    <meta property="og:updated_time" content="UNIX timestamp" />
+
+    <!-- Twitter – https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://www.my-awesome-site.com/" />
+    <meta name="twitter:title" content="My Awesome Page Title" />
+    <meta name="twitter:description" content="My Awesome Page Description" />
+    <meta name="twitter:image" content="https://www.my-awesome-site.com/awesome-image.jpg" />
+    <meta name="twitter:image:alt" content="My awesome site's image description" />
+
+    <!-- RSS feed – if existent -->
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      href="https://www.my-awesome-site.com/feed.xml"
+    />
+
+    <!-- Robots – if needed ---
+    follow – The search engine crawler will follow all the links in that web page
+    index – The search engine crawler will index the whole web page
+    nofollow – The search engine crawler will NOT follow the page and any links in that web page
+    noindex – The search engine crawler will NOT index that web page
+    -->
+    <meta name="robots" content="noindex, nofollow" />
+
+    <!-- Favicon – essential icons only. For more icons use https://realfavicongenerator.net/ -->
+    <link rel="icon" href="/favicon.ico" /><!-- 32×32 -->
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" /><!-- 180×180 -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="site-wrap">
+      <!-- a11y skip-link – https://webaim.org/techniques/skipnav/ -->
+      <a class="skip-link" href="#main-content">Skip to content</a>
+
+      <main tabindex="-1" id="main-content">
+        <!-- CONTENT -->
+      </main>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
+
 ```
 
 [⬆ back to top](#table-of-contents)
