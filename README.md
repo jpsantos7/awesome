@@ -8,7 +8,7 @@ Enjoy!
 
 If you like this repo, be sure to ⭐ it.
 
-Please read [`contributing guidelines`](./CONTRIBUTING.md) before submitting new resources.
+Please read [`contributing guidelines`](./CONTRIBUTING.md) before submitting new resources.****
 
 ---
 
@@ -42,6 +42,7 @@ Please read [`contributing guidelines`](./CONTRIBUTING.md) before submitting new
   - [Vue UI libraries](#vue-ui-libraries)
   - [React UI libraries](#react-ui-libraries)
   - [Angular UI libraries](#angular-ui-libraries)
+  - [Front-end checklists](#front-end-checklists)
   - [Useful Snippets](#useful-snippets)
     - [JavaScript](#javascript)
   - [Accessibility](#accessibility)
@@ -559,6 +560,17 @@ Please read [`contributing guidelines`](./CONTRIBUTING.md) before submitting new
 | [Taiga UI](https://taiga-ui.dev/)              | A powerful set of open source components for Angular                                                               |
 | [PrimeNG](https://www.primefaces.org/primeng/) | Angular UI Component Library featuring elegant, high-performance, accessible and fully customizable UI Components. |
 | [Material UI](https://material.angular.io/) | Material Design components for Angular. |
+
+[⬆ back to top](#table-of-contents)
+
+
+## Front-end checklists
+
+| Website                                        | Description                                                                                                        |
+| ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| [Front-End Checklist](https://frontendchecklist.io/)              | The Front-End Checklist is an exhaustive list of all elements you need to have / to test before launching your website / HTML page to production.                                                               |
+| [Front-End Performance Checklist](https://github.com/thedaviddias/Front-End-Performance-Checklist)              | The only Front-End Performance Checklist that runs faster than the others.                                                               |
+| [Front-End Design Checklist](https://github.com/thedaviddias/Front-End-Design-Checklist) | The Design Checklist for Front-End Developers is an exhaustive list of elements which can help developers to analyse and understand web designs and ensure the quality of their Front-End development. |
 
 [⬆ back to top](#table-of-contents)
 
